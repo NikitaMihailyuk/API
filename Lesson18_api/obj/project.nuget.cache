@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G59ScYn+2jY07oy3remD2yomcJtg7DCwwd7hhbxZaA2DeWSGf1Epm0wAEtYKIa14rNSbbTvu43YXL/1GQ1nZ0g==",
+  "dgSpecHash": "O2tHWT0hi/RMveGACB9fpX/CTDltklCMSo7+XpgdXGRWvYisJWAx+3ZR1KcaB1BYrMHJGdRC2+snfQWY8wPMZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Lesson18_api.csproj",
+  "projectFilePath": "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\Lesson18_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Никита\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Никита\\.nuget\\packages\\microsoft.codecoverage\\17.6.2\\microsoft.codecoverage.17.6.2.nupkg.sha512",

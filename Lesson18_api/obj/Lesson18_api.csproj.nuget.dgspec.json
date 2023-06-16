@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Lesson18_api.csproj": {}
+    "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\Lesson18_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Lesson18_api.csproj": {
+    "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\Lesson18_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Lesson18_api.csproj",
+        "projectUniqueName": "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\Lesson18_api.csproj",
         "projectName": "Lesson18_api",
-        "projectPath": "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Lesson18_api.csproj",
+        "projectPath": "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\Lesson18_api.csproj",
         "packagesPath": "C:\\Users\\Никита\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\obj\\",
+        "outputPath": "C:\\Users\\Никита\\Source\\Repos\\NikitaMihailyuk\\API\\Lesson18_api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Никита\\AppData\\Roaming\\NuGet\\NuGet.Config",
