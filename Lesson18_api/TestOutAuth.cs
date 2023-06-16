@@ -116,7 +116,7 @@ namespace Lesson18_api
         {
             var request = new RestRequest("/users", Method.Post);
 
-            var body = File.ReadAllText(@"C:\\Users\\Никита\\Source\\Repos\\API\\Lesson18_api\\Userjs.json");
+            var body = File.ReadAllText(@"Userjs.json");
 
             request.AddBody(body);
 
