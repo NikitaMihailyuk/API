@@ -1,4 +1,6 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,13 +28,28 @@ namespace Lesson18_api
 
             if (response.IsSuccessful)
             {
-                Console.WriteLine(response.Content.ToString());
+                 Console.WriteLine(response.Content.ToString());
+
+
+
+                var userRes = JsonConvert.DeserializeObject<CommonDataResponse<User>>(response.Content);
+                var userRes2 = JsonConvert.DeserializeObject<CommonDataResponse<List<User>>>(response.Content);
+
+
+
+
+
+
+                var jsonResponse = JObject.Parse(response.Content);
+                var userResponseRoot = JsonConvert.DeserializeObject<User>(jsonResponse.SelectToken("$.data").ToString());
+   
+                Console.WriteLine(userResponseRoot.first_name);
             }
             else
             {
                 Console.WriteLine("Failed: " + response.ErrorMessage);
             }
-
+            
         }
 
         [Test]
@@ -40,13 +57,13 @@ namespace Lesson18_api
         {
             var request = new RestRequest("/users", Method.Post);
 
-            var body = new User
-            {
-                Name = " ",
-                Password = " ",
-            };
+         ///   var body = new User
+       ///     {
+        ///        Name = " ",
+        ///        Password = " ",
+        ///    };
 
-            request.AddBody(body);
+          //  request.AddBody(body);
 
             var response = client.Execute(request);
 
@@ -92,12 +109,15 @@ namespace Lesson18_api
         {
             var request = new RestRequest("/users", Method.Post);
 
-            var body = new User
+            var user = new User
             {
-                Name = "Ivan",
-                Password = " ",
+                first_name = "Ivan",
+                email = "123",
             };
 
+            var body = JsonConvert.SerializeObject(user);
+
+            request.AddBody(body);
             var response = client.Execute(request);
 
             if (response.IsSuccessful)
@@ -108,7 +128,10 @@ namespace Lesson18_api
             {
                 Console.WriteLine("Failed: " + response.ErrorMessage);
             }
-
+            User userResponseRoot = JsonConvert.DeserializeObject<User>(response.Content);
+         ////   Assert.AreEqual(user.first_name, userResponseRoot.first_name);
+            Assert.That(user, Is.EqualTo(userResponseRoot));
+            
         }
 
         [Test]

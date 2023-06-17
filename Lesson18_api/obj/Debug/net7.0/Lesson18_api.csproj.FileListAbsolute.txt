@@ -200,3 +200,4 @@ C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\ne
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\net7.0\Lesson18_api.pdb
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\net7.0\Lesson18_api.genruntimeconfig.cache
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\net7.0\ref\Lesson18_api.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\Home18.json
