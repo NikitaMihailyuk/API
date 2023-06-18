@@ -9,10 +9,10 @@ namespace Lesson18_api.Core
     internal class BaseService
     {
         protected BaseApiClient apiClient;
-        
-        public BaseService(BaseApiClient apiClient)
-        { this.apiClient = apiClient; }
 
-
+        public BaseService(string url)
+        {
+            this.apiClient = new BaseApiClient(url);
+        }
     }
 }

@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lesson18_api
-{
+namespace Lesson18_api.BusinessObject.Model
 {
     internal class CommonResultResponse<T>
     {
