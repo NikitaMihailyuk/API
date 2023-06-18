@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lesson18_api
 {
-{
-    internal class CommonResultResponse<T>
+ 
+    internal class CommonDataResponse<T>
     {
-        public bool Status { get; set; }
-        public T Result { get; set; }
+        public T Data { get; set; }
     }
 }

@@ -38,8 +38,6 @@ namespace Lesson18_api
 
 
 
-
-
                 var jsonResponse = JObject.Parse(response.Content);
                 var userResponseRoot = JsonConvert.DeserializeObject<User>(jsonResponse.SelectToken("$.data").ToString());
    
