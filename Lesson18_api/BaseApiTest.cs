@@ -15,6 +15,12 @@ namespace Lesson18_api
             {
                 //    apiClient = new BaseApiClient("https://api.qase.io/v1");
                 //    apiClient.AddToken("139648cd7fae0460f1e38bd794aaf54a22505db0680705fabe0efeb918d968c2");
+
+            //api auth configuration
+            //
+            
             }
+
+
         }
     }
