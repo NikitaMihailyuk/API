@@ -16,9 +16,11 @@ namespace Lesson18_api.BusinessObject
         public string GetProjectByCodeEndpoint = "/project/{code}";
         public string ProjectAcces = "/project/{code}/access";
 
+        // public ProjectService(): base(Configuration.Api.BaseUrl){} and url in config
+
         public ProjectService() : base("https://api.qase.io/v1")
         {
-            /// apiClient.AddToken("139648cd7fae0460f1e38bd794aaf54a22505db0680705fabe0efeb918d968c2");
+            /// 111 apiClient.AddToken("139648cd7fae0460f1e38bd794aaf54a22505db0680705fabe0efeb918d968c2");
             ///0f6b575dda888d5edb4b9ab4abf9352e7f29f71c20b81580de2724d3a27b9362 my token//
             ///
             apiClient.AddToken("0f6b575dda888d5edb4b9ab4abf9352e7f29f71c20b81580de2724d3a27b9362");
@@ -61,8 +63,6 @@ namespace Lesson18_api.BusinessObject
             var request = new RestRequest(ProjectAcces, Method.Delete);
             request = request.AddUrlSegment("code", code).AddParameter("application/json", "{\"member_id\":" + memberid + "}", ParameterType.RequestBody);
             Console.WriteLine(request);
-            return apiClient.Execute(request);
-
             return apiClient.Execute(request);
         }
 

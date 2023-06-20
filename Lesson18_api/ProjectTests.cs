@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Bogus;
 
 namespace Lesson18_api
 {
@@ -52,7 +53,7 @@ namespace Lesson18_api
             var projectModel = new CreateProjectModel()
             {
                 Title = "Test",
-                Code = "TESTM",
+                Code = $"{new Faker().Finance.RoutingNumber()}",
                 Access = "none"
             };
 
