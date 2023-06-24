@@ -201,3 +201,16 @@ C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\ne
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\net7.0\Lesson18_api.genruntimeconfig.cache
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\obj\Debug\net7.0\ref\Lesson18_api.dll
 C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\Home18.json
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\Bogus.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\log4net.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\Moq.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\NLog.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\RichardSzalay.MockHttp.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\System.Diagnostics.EventLog.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\Никита\Source\Repos\NikitaMihailyuk\API\Lesson18_api\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
