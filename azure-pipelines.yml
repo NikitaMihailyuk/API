@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  name: 'Nikita'
+
+steps:
+- task: NuGetCommand@2
+  displayName: 'Restore nuget package for Solution'
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build solution'
+  inputs:
+    command: 'build'
+    arguments: '--configuration Debug'
+
+- task: DotNetCoreCLI@2
+  displayName: Run test
+  inputs:
+    command: 'test'
