@@ -1,5 +1,5 @@
 trigger:
-- main
+- home_20
 
 pool:
   name: 'Nikita'
