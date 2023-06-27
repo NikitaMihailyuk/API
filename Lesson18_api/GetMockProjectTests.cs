@@ -19,7 +19,7 @@ namespace Lesson18_api
 
             var client = new RestClient(new RestClientOptions { ConfigureMessageHandler = _ => mock });
 
-            var request = new RestRequest("http/requst/code=12");
+            var request = new RestRequest("http/requst/code=1223");
             var response = client.Get(request);
             Console.WriteLine(response.Content);
         }
