@@ -29,6 +29,12 @@
     <None Update="Home18.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test.runsetting">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test.runsettings">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Userjs.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

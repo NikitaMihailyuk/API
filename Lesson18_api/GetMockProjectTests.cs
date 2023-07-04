@@ -15,7 +15,8 @@ namespace Lesson18_api
         public void GetMockProject()
         {
             var mock = new MockHttpMessageHandler();
-            mock.When("http://qaseio/api/v8/project/*").Respond( new HttpResponseMessage() { Content = "'Title':'TESTM'", StatusCode=HttpStatusCode.Accepted });
+          //  mock.When("http://qaseio/api/v8/project/*").Respond( new HttpResponseMessage() 
+           /// { Content = "'Title':'TESTM'", StatusCode=HttpStatusCode.Accepted });
 
             var client = new RestClient(new RestClientOptions { ConfigureMessageHandler = _ => mock });
 
