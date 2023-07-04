@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using Core.Configuration;
 
 namespace Lesson18_api.Core
 {
@@ -12,11 +13,11 @@ namespace Lesson18_api.Core
     {
         protected BaseApiClient apiClient;
         protected static NLog.Logger logger = LogManager.GetCurrentClassLogger();
-        //add config
-
         public BaseService(string url)
         {
             this.apiClient = new BaseApiClient(url);
+            apiClient.AddToken(Configuration.Api.Token);
+  
         }
     }
 }

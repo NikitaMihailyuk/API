@@ -10,6 +10,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Bogus;
+using Core.Configuration;
+using Lesson18_api.Core;
 
 namespace Lesson18_api
 {
@@ -24,6 +26,7 @@ namespace Lesson18_api
         {
             projectService = new ProjectService();
             apiProjectSteps = new ApiProjectSteps();
+                        
         }
 
         [Test]
@@ -32,7 +35,9 @@ namespace Lesson18_api
             var projectCode = "TESTM";
 
             var response = projectService.GetProjectByCode(projectCode);
-            Console.WriteLine(response);
+            Console.WriteLine(response.Content);
+            Console.WriteLine(response.ContentEncoding);
+            Console.WriteLine(response.StatusCode);
             Assert.IsTrue(response.StatusCode.Equals(HttpStatusCode.OK));
         }
 

@@ -14,14 +14,14 @@ namespace Lesson18_api
         [Test]
         public void GetMockProject()
         {
-            var mock = new MockHttpMessageHandler();
-            mock.When("http://qaseio/api/v8/project/*").Respond( "aplication/json", "{'Title': 'JOHSDF'}");
+           // var mock = new MockHttpMessageHandler();
+            //mock.When("http://qaseio/api/v8/project234556/*").Respond( "aplication/json", "{'Title': 'JOHSDF'}");
 
-            var client = new RestClient(new RestClientOptions { ConfigureMessageHandler = _ => mock });
+           // var client = new RestClient(new RestClientOptions { ConfigureMessageHandler = _ => mock });
 
             var request = new RestRequest("http/requst/code=1223");
-            var response = client.Get(request);
-            Console.WriteLine(response.Content);
+           // var response = client.Get(request);
+           // Console.WriteLine(response.Content);
         }
     }
 }

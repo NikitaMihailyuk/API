@@ -1,26 +1,26 @@
-﻿using System;
+﻿using Lesson18_api.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Configuration;
 
 namespace Lesson18_api
 {
 
-        internal class BaseApiTest
+    internal class BaseApiTest
+
+    {
+        protected BaseApiClient apiClient;
+
+        [OneTimeSetUp]
+        public void InitApiClient()
         {
-
-            [OneTimeSetUp]
-            public void Initial()
-            {
-                //    apiClient = new BaseApiClient("https://api.qase.io/v1");
-                //    apiClient.AddToken("139648cd7fae0460f1e38bd794aaf54a22505db0680705fabe0efeb918d968c2");
-
-            //api auth configuration
-            //
-            
-            }
-
-
+            ///   apiClient = new BaseApiClient(https://api.qase.io/v1);
+            apiClient = new BaseApiClient("https://api.qase.io/v1");
+            apiClient.AddToken("0f6b575dda888d5edb4b9ab4abf9352e7f29f71c20b81580de2724d3a27b9362");
         }
+
     }
+}

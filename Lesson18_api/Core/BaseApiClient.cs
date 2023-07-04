@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
 
 namespace Lesson18_api.Core
 {
     internal class BaseApiClient
     {
         private RestClient restClient;
+        protected Logger logger = LogManager.GetCurrentClassLogger();
 
         public BaseApiClient(string url)
         {
