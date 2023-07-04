@@ -5,7 +5,7 @@ namespace Lesson18_api
         [SetUp]
         public void Setup()
         {
-            1
+            
         }
 
         [Test]
